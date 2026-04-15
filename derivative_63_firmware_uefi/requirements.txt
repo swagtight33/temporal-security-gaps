@@ -1,0 +1,39 @@
+# Firmware Cache Validator Requirements
+# Derivative #63: Firmware/UEFI Cached Executable Persistence
+# Patent Portfolio: System and Method for Mitigating Cached Executable Persistence
+
+# Core dependencies
+python>=3.8
+
+# Async support (for Python < 3.10)
+asyncio-contextmanager>=1.0.0; python_version < "3.10"
+
+# Type hints
+typing-extensions>=4.0.0; python_version < "3.10"
+
+# Optional: Real-time file monitoring (Linux only)
+inotify_simple>=2.3.5; sys_platform == "linux"
+
+# Optional: Cryptography for enhanced signature verification
+cryptography>=41.0.0
+
+# Optional: UEFI variable parsing utilities
+pyasn1>=0.4.8
+
+# Optional: Hardware-backed attestation support
+tpm2-pytss>=0.5.0; sys_platform == "linux"
+
+# Testing dependencies (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.20.0
+pytest-cov>=4.0.0
+
+# Code quality (optional)
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+pylint>=2.15.0
+
+# Documentation (optional)
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0

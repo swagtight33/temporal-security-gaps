@@ -1,0 +1,5 @@
+# No external dependencies required - stdlib only
+# Optional dependencies for enhanced functionality:
+# psutil>=5.9.0        # Process enumeration (Derivatives #68, #62)
+# cryptography>=41.0   # Enhanced crypto operations (Derivative #63)
+# aiofiles>=23.0       # Async file I/O (all derivatives)
